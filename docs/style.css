@@ -1,0 +1,1094 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --theme-color:#e74c3c;
+}
+section{
+    height: 100vh;
+    width: 100%;
+}
+.header{
+    background: linear-gradient(rgb(41, 66, 75));
+    background: url('9.jpg');
+    background-size: cover;
+    position: relative;
+}
+nav{
+    background-color: rgb(49, 47, 47);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    align-items: baseline;
+}
+.btn-show{
+    display: none;
+    width: 30px;
+    height: 30px;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    outline: none;
+    border: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.btn-show .bar{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: orangered;
+    color: white;
+    margin-right: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    height: 55px;
+    font-size: 16px;
+    text-align: center;
+    border:none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+}
+.logo{
+    text-transform: uppercase;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 25px;
+}
+.logo span{
+    font-weight: 800;
+    font-size: 30px;
+    color: var(--theme-color) ;
+    text-transform: uppercase;
+}
+.navbar1a{
+    background: linear-gradient(orangered,aliceblue);
+    padding: 10px;
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    margin-right: 300px;
+    color: #fff;
+}
+.navbar1a:hover{
+    color: #ccc;
+}
+li{
+    padding: 10px 30px;  
+}
+.nav{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+.nav:hover{
+    color: #e74c3c;
+    transition: 0.3s; 
+}
+.link-btn{
+    background-color: #e74c3c;
+    color:white;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px;
+}
+#navsignup:hover{
+    background-color: white;
+}
+
+
+/*--------banner-------*/
+
+.banner{
+    color: black;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    padding-left: 50px;
+}
+.header .banner h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: orangered;
+}
+.header .banner h1 span{
+    font-weight: 500;
+    color: black
+}
+.header .banner p{
+    margin: 30px 0;
+}
+
+
+/*-------Services----*/
+.header .services{
+    position: absolute;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.header .services .service{
+    padding: 20px;
+}
+.header .services .service h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.header .services .service p{
+    font-size: 14px;
+    margin: 15px 0;
+}
+.header .services .service a{
+    color: cadetblue;
+    font-size: 14px;
+    font-weight: 500;
+}
+.services .service:nth-child(1){
+    background-color: #363c46;
+    color: white;
+}
+/*---------Courses--------*/
+.courseheading{
+    height:70px;
+    width:320px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 600px;
+    font-size: 26px;
+    display: inline-block;
+    border-radius: 200px;
+    border-color: skyblue;
+    border-style: solid;
+    background: linear-gradient(skyblue,aliceblue);
+    color: orangered;
+}
+.courseheading:hover{
+    border-color: orangered;
+}
+.courses{
+    background-image: linear-gradient(to right,#65cdf4 ,aliceblue);
+    padding: 50px;
+}
+.course1{
+    margin-top: 80px;
+    height: 500px;
+    width: 550px;
+    background-image: linear-gradient(to right,skyblue,aliceblue);
+    display:flex ;
+    display: inline-block;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 20px;
+    border-radius: 40px;
+    color: black;
+    border-color: #65cdf4;
+    border-style: solid;
+    padding: 30px;
+}
+.course1:hover{
+    border-color: orangered;
+}
+.courses .course .course1 h3{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 15px 0;
+}
+.courses .course .course1 p{
+    font-size: 20px;
+    margin: 15px 0;
+    margin-top: 20px;
+}
+.courses .course .course1 a{
+    color: orangered;
+    font-size: 20px;
+    font-weight: 500;
+}
+/*---------About--------*/
+.about{
+    background-image:url('Untitled\ design\ \(8\).png');
+    padding: 50px;
+}
+.aboutheading{
+    height:70px;
+    width:550px;
+    text-align: center;
+    justify-content: center;
+    margin-left: 470px;
+    font-size: 26px;
+    display: inline-block;
+    border-radius: 200px;
+    border-color: skyblue;
+    border-style: solid;
+    background: linear-gradient(skyblue,aliceblue);
+    color: orangered;
+}
+.aboutheading:hover{
+    border-color: orangered;
+}
+.aboutheading .a12{
+    color: #363c46;
+}
+
+.aboutsals .sals1{
+    margin-top: 40px;
+    height: 180px;
+    width: 350px;
+    background-image: linear-gradient(to right,skyblue,aliceblue);
+    display:flex ;
+    display: inline-block;
+    text-align: center;
+    margin-left: 180px;
+    margin-right: 170px;
+    border-radius: 80px;
+    color: black;
+    border-color: skyblue;
+    border-style: solid;
+    padding: 30px;
+}
+.aboutsals .sals1:hover{
+    border-color: orangered;
+}
+.aboutsals1 .sals2{
+    margin-top: 10px;
+    height: 180px;
+    width: 350px;
+    background-image: linear-gradient(to right,skyblue,aliceblue);
+    display:flex ;
+    display: inline-block;
+    text-align: center;
+    margin-left: 180px;
+    margin-right:170px;
+    border-radius: 80px;
+    color: black;
+    border-color: skyblue;
+    border-style: solid;
+    padding: 30px;
+}
+.aboutsals1 .sals2:hover{
+    border-color: orangered;
+}
+.aboutsals2 .sals3{
+    margin-top: 1px;
+    height: 150px;
+    width: 350px;
+    background-image: linear-gradient(to right,skyblue,aliceblue);
+    display:flex ;
+    display: inline-block;
+    text-align: center;
+    margin-left: 550px;
+    margin-right: 400px;
+    border-radius: 80px;
+    color: black;
+    border-color: skyblue;
+    border-style: solid;
+    padding: 30px;
+}
+.aboutsals2 .sals3:hover{
+    border-color: orangered;
+    background-color: aliceblue;
+}
+
+/*---------testimonials--------*/
+.testimonials {
+    background-color: #87d6f3;
+    padding: 50px;
+    background-size: cover;
+}
+
+.testimonialheading {
+    height: 90px;
+    width: 400px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin: 0 auto 40px auto;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 200px;
+    border: 2px solid skyblue;
+    background: linear-gradient(skyblue, aliceblue);
+    color: orangered;
+}
+
+.testimonialheading:hover {
+    border-color: orangered;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.testimonial-box {
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, skyblue, aliceblue);
+    border-radius: 20px;
+    border: 2px solid skyblue;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.testimonial-box:hover {
+    border-color: orangered;
+}
+
+.testimonial-box p {
+    font-style: italic;
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.testimonial-box h4 {
+    margin-top: 10px;
+    font-weight: 500;
+    color: black;
+}
+
+.stars {
+    margin-top: 10px;
+    color: gold;
+    font-size: 1.2em;
+}
+
+.studentimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: span 1;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-rows: 1fr;
+        height: 30px;
+    }
+    .testimonials .studentimage{
+        display: none;
+        width:140px;
+        height: 60px;
+    }
+    .testimonial-box, .studentimage {
+        margin-bottom: 20px;
+        height: 250px;
+        width: 200px;
+    }
+    .testimonialheading {
+        font-size: 15px;
+        width: 300px;
+    }
+    .testimonial-box p {
+        font-size: 12px;
+    }
+    .testimonial-box h4 {
+        font-size: 0.9em;
+    }
+    .stars {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials {
+        padding: 20px;
+    }
+    .testimonialheading {
+        font-size: 18px;
+        height: auto;
+        padding: 10px;
+    }
+    .testimonial-box {
+        padding: 10px;
+    }
+    .testimonial-box p {
+        font-size: 0.8em;
+    }
+    .testimonial-box h4 {
+        font-size: 0.8em;
+    }
+    .stars {
+        font-size: 0.9em;
+    }
+}
+
+.faq {
+    background-color: #87d6f3;
+    margin-top: 0px;
+    padding: 20px 0;
+}
+
+.faq-container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.faq-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.faq-items {
+    width: 55%;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+.faq-question.open {
+    background-color: #e9e9e9;
+}
+
+.faq-toggle {
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.faq-answer {
+    display: none;
+    padding: 10px;
+    border-left: 2px solid #007BFF;
+}
+
+.faq-answer.show {
+    display: block;
+}
+
+.contact {
+    width: 35%;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(to right, skyblue, aliceblue);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contactus {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-image: linear-gradient(skyblue, aliceblue);
+    border-radius: 30px;
+    border: 1px solid #65cdf4;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form .form-group {
+    margin-bottom: 15px;
+}
+
+.form .form-group label {
+    color: #e74c3c;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.form .form-group input,
+.form .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form .form-group textarea {
+    resize: none;
+    height: 120px;
+}
+
+.form .form-group input:focus,
+.form .form-group textarea:focus {
+    border: 1px solid orangered;
+}
+
+.form .form-group:last-child button {
+    width: 150px;
+    padding: 10px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form .form-group:last-child button:hover {
+    background-color: #c92715;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.footer-section {
+    width: 22%;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #c92715;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 5px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007BFF;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    width: 100%;
+}
+
+.footer-bottom .design {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #007BFF;
+}
+
+/*-----media queries-------*/
+@media (max-width:768px) {
+    .logo{
+        font-size: 18px;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        background-color: rgba(0,0,0,0.5);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        top: 20px;
+        left:0;
+        z-index: 1;
+    }
+    .navbar ul li:hover{
+        background-color: rgba(255,255,255,0.2);
+    }
+    .banner{
+        width: 100%;
+    }
+    .banner h1{
+        font-size: 30px !important;
+    }
+    .banner p{
+        font-size: 14px;
+    }
+    .header{
+        background-size: cover;
+    }
+    .header .services{
+        width: 100%;
+        grid-template-columns: 1fr;
+    }
+    .btn-show{
+        display: flex;
+    }
+
+    .courseheading {
+        width: 200px;
+        height: 70px;
+        margin-left: 250px;
+        margin-right: auto;
+        font-size: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    .courses {
+        padding: 20px;
+    }
+
+    .course1 {
+        margin-top: 50px;
+        height: 400px;
+        width: 450px;
+        max-width: 350px; /* Ensures both course1 fit within the section */
+        margin-left:0px;
+        padding: 20px;
+        font-size: 12px;
+        margin-right: 5px;
+        box-sizing: border-box;
+    }
+
+    .courses .course {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .courses .course .course1 h3 {
+        font-size: 24px;
+    }
+
+    .courses .course .course1 p {
+        font-size: 18px;
+    }
+
+    .courses .course .course1 a {
+        font-size: 18px;
+    }
+    .course1 img{
+        height:150px;
+        width: 300px;
+    }
+
+    .about {
+        padding: 20px;
+        background-image: linear-gradient(to right,skyblue,aliceblue);
+    }
+
+    .aboutheading {
+        width: auto;
+        height: 70px;
+        margin-left: 180px;
+        margin-right: auto;
+        font-size: 15px;
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .aboutsals, .aboutsals1, .aboutsals2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aboutsals .sals1, .aboutsals1 .sals2, .aboutsals2 .sals3 {
+        margin-top: 20px;
+        height: auto;
+        width: 90%;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .aboutsals .sals1:hover, .aboutsals1 .sals2:hover, .aboutsals2 .sals3:hover {
+        border-color: orangered;
+    }
+
+    .contact .contactus {
+        width: 200px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .contact .row {
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact .col {
+        width: 90%;
+        padding: 20px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .contact .row .col {
+        margin-bottom: 20px;
+    }
+
+    .form .form-group input,
+    .form .form-group textarea {
+        width: 250px;
+    }
+
+    .form .form-group:last-child button {
+        align-self: left;
+    }
+
+    .contactus1 {
+        width: 400px;
+        height: 400px;
+        margin-left: 0px;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 20px;
+        font-size: 13px;
+        box-sizing: border-box;
+    }
+
+    .contact h3 {
+        font-size: 18px;
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 16px;
+    }
+    .navbar {
+        display: none;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+    .navbar ul li:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .banner {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .banner h1 {
+        font-size: 24px !important;
+    }
+    .banner p {
+        font-size: 12px;
+    }
+    .header {
+        background-size: cover;
+    }
+    .header .services {
+        width: 550px;
+        font-size: 10px;
+        grid-template-rows: 1fr;
+        gap: 10px;
+    }
+    .header .services .service{
+        font-size: 10px;
+    }
+
+    .btn-show {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .btn-show .bar {
+        width: 100%;
+        height: 3px;
+        background-color: black;
+    }
+    .dropdown-content {
+        position: static;
+        width: 100%;
+        display: none;
+    }
+    .dropdown-content a {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        text-decoration: none;
+    }
+    .dropdown-content a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+
+    .courseheading {
+        width: 200px;
+        height: 60px;
+        margin: 0 auto;
+        margin-left: 170px;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .courses {
+        padding: 10px;
+    }
+
+    .course1 {
+        width: 450px;
+        height: 300px;
+        margin: 20px 0;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        flex-direction: row;
+        font-size: 12px;
+    }
+
+    .courses .course {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .courses .course .course1 h3 {
+        font-size: 20px;
+    }
+
+    .courses .course .course1 p {
+        margin-top: 7px;
+        font-size: 14px;
+    }
+
+    .courses .course .course1 a {
+        font-size: 14px;
+    }
+
+    .course1 img {
+        height: auto;
+        width: 200px;
+        max-width: 300px;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+    .aboutheading {
+        width: 300px;
+        height: 60px;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-bottom: 40px;
+        font-size: 14px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .aboutsals, .aboutsals1, .aboutsals2 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .aboutsals .sals1, .aboutsals1 .sals2, .aboutsals2 .sals3 {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .aboutsals .sals1:hover, .aboutsals1 .sals2:hover, .aboutsals2 .sals3:hover {
+        border-color: orangered;
+    }
+
+    .contact .contactus {
+        width: 200px;
+        height: auto;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .contact .row {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contact .col {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .form .form-group input,
+    .form .form-group textarea {
+        width: 100%;
+    }
+
+    .contactus1 {
+        width: 545px;
+        margin: 20px 0;
+        padding: 10px;
+        font-size: 12px;
+        align-content: normal;
+        margin-bottom: 0px;
+    }
+
+    .contact h3 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .contactus1 ul {
+        padding-left: 20px;
+    }
+
+    .contactus1 ul li {
+        margin-bottom: 10px;
+    }
+
+    .contactus1 ul li a {
+        margin-left: 5px;
+    }
+    .design{
+        color: black;
+    }
+}
+
+
+.show{
+    display: block !important;
+}
+
